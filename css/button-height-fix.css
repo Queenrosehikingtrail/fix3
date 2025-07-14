@@ -1,0 +1,83 @@
+/* Button Height Fix - High Specificity Override */
+
+/* Force button height reduction with !important */
+.btn-compact,
+button.btn-compact,
+#track-location-btn.btn-compact,
+#add-waypoint-btn-ui.btn-compact,
+#download-map-btn.btn-compact,
+#live-tracking-toggle.btn-compact {
+    padding: 1px 3px !important;
+    font-size: 10px !important;
+    height: 20px !important;
+    line-height: 18px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: all 0.2s !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .btn-compact,
+    button.btn-compact,
+    #track-location-btn.btn-compact,
+    #add-waypoint-btn-ui.btn-compact,
+    #download-map-btn.btn-compact,
+    #live-tracking-toggle.btn-compact {
+        padding: 1px 2px !important;
+        font-size: 9px !important;
+        height: 18px !important;
+        line-height: 16px !important;
+    }
+}
+
+/* Ensure specific button colors are maintained */
+#track-location-btn.btn-compact {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}
+
+#track-location-btn.btn-compact:hover {
+    background-color: #45a049 !important;
+}
+
+#add-waypoint-btn-ui.btn-compact {
+    background-color: #FF9800 !important;
+    color: white !important;
+}
+
+#add-waypoint-btn-ui.btn-compact:hover {
+    background-color: #F57C00 !important;
+}
+
+#download-map-btn.btn-compact {
+    background-color: #2196F3 !important;
+    color: white !important;
+}
+
+#download-map-btn.btn-compact:hover {
+    background-color: #1976D2 !important;
+}
+
+#live-tracking-toggle.btn-compact {
+    background-color: #6c757d !important;
+    color: white !important;
+}
+
+#live-tracking-toggle.btn-compact:hover {
+    background-color: #5a6268 !important;
+}
+
+#live-tracking-toggle.btn-compact.active {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+#live-tracking-toggle.btn-compact.active:hover {
+    background-color: #c82333 !important;
+}
+

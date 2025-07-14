@@ -1,0 +1,101 @@
+/**
+ * Inline Styles Cleanup - Queen Rose Hiking Trail App
+ * Consolidates inline styles for better maintainability and performance
+ */
+
+/* KML Upload Section Styles */
+#kml-file-input {
+    margin-bottom: 10px;
+}
+
+#kml-upload-status {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Booking Section Styles */
+#booking-confirmation {
+    display: none;
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Weather Section Styles */
+#refresh-weather-btn {
+    margin-bottom: 10px;
+}
+
+#weather-last-updated {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+#hiking-recommendation {
+    display: none;
+    padding: 10px;
+    background-color: #eef;
+    border-left: 5px solid #3498db;
+    margin-bottom: 15px;
+}
+
+#weather-forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Directions Section Styles */
+.directions-banner {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Debug Section Styles */
+#debug-log-section {
+    display: none; /* Hidden by default */
+}
+
+/* Page Footer Positioning */
+.page-footer.left-aligned {
+    left: 16px;
+    right: auto;
+}
+
+/* Responsive Design Improvements */
+@media (max-width: 768px) {
+    #weather-forecast-container {
+        gap: 8px;
+    }
+    
+    .directions-banner {
+        margin: 8px auto;
+    }
+    
+    #hiking-recommendation {
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+}
+
+/* Performance Optimizations */
+#kml-upload-status,
+#booking-confirmation,
+#hiking-recommendation {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#kml-upload-status.show,
+#booking-confirmation.show,
+#hiking-recommendation.show {
+    opacity: 1;
+}
+
+#kml-upload-status.hide,
+#booking-confirmation.hide,
+#hiking-recommendation.hide {
+    opacity: 0;
+}
+
